@@ -1,0 +1,276 @@
+/* Tipografías*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Quicksand", sans-serif;
+    ;
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+    ;
+}
+
+body {
+    background-color: #998F67;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-contenedor {
+    min-height: 100vh;
+    /* Al menos el alto de la ventana */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #535353;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header img {
+    width: 180px;
+    height: auto;
+}
+
+.agradecimiento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    margin-top: -550px;
+    /* Ajusta esta propiedad según sea necesario */
+    color: #fff;
+}
+
+.contenedor {
+    text-align: center;
+    /* Esto centra el contenido dentro del contenedor */
+}
+
+.contenedor h1 {
+    font-size: 3em;
+    /* Tamaño del título */
+    margin-bottom: 10px;
+    /* Espacio entre el título y el subtítulo */
+}
+
+.contenedor p {
+    font-size: 1.3em;
+    /* Tamaño del subtítulo */
+}
+
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas con el mismo ancho */
+    gap: 20px;
+    /* Espacio entre las columnas */
+}
+
+.paso {
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    margin-top: -500px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.paso img {
+    width: 100px;
+    /* Ajusta el tamaño de las imágenes según sea necesario */
+}
+
+.paso p {
+    margin-top: 10px;
+    /* Espacio entre la imagen y el texto */
+    color: #fff;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 80px;
+    background-color: #FFCF40;
+
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    /* Para que ocupe todo el ancho disponible */
+    margin: -70px auto 0;
+    /* Para centrar horizontalmente */
+    margin-top: -200px;
+
+}
+
+button:hover {
+    background-color: #ffcf40d4;
+
+}
+
+a {
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #6E6E6E;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.columna1 img {
+    width: 160px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.columna1 h3 {
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    ;
+    max-width: 350px;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.redes-sociales img {
+    width: 60px;
+    margin: 20px;
+    margin-right: -30px;
+    margin-left: 50px;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* Ajusta el margen superior según sea necesario */
+    color: white;
+}
+
+.linea-horizontal {
+    width: 100%;
+    height: 2px;
+    /* Grosor de la línea */
+    background-color: #424141;
+    /* Color de la línea */
+    margin-bottom: 20px;
+    /* Espacio entre la línea y el texto */
+}
+
+.texto-derechos {
+    font-size: 16px;
+    /* Tamaño del texto */
+    font-family: "Ubuntu", sans-serif;
+    ;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+@media (max-width: 480px){
+    /* Ajustes para pantallas de 480px o menos */
+
+    
+    .agradecimiento {
+        height: 90vh; /* Reduzco la altura para subir los elementos */
+        margin-top: -150px; /* Ajusto el margen superior para subir el contenido */
+    }
+
+    .paso {
+        margin-top: 0px; /* Elimino el margen superior anterior */
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    button {
+        margin-top: 10px; /* Ajusto el margen superior del botón */
+    }
+
+    .contenedor h1 {
+        font-size: 2.5em;
+      
+        margin-bottom: 5px;
+    }
+
+    .contenedor p {
+        
+        font-size: 1.1em;
+    }
+
+    .pasos {
+        margin-top:-35px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    
+
+    .paso img {
+        width: 80px;
+    }
+
+    .paso p {
+        font-size: 16px;
+    }
+
+
+
+    .footer1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columna1 img {
+        width: 120px;
+        margin-right: 0;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .columna1 h3 {
+        font-size: 16px;
+        max-width: none;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .redes-sociales img {
+        width: 40px;
+        margin: 10px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+}
