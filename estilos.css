@@ -27,14 +27,14 @@ body {
 .header {
     background-color: #535353;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header img {
-    width: 180px;
+    width: 150px;
     height: auto;
 }
 
@@ -54,7 +54,9 @@ body {
 
     width: 40%;
     height: auto;
-    margin-top: -25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 0.7;
     
 }
 
@@ -533,20 +535,38 @@ footer {
 /* RESPONSIVE */
 
 @media (max-width: 480px) {
+.header {
+    background-color: #535353;
+    color: #fff;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 105px;
+    height: auto;
+}
+}
+
+
+@media (max-width: 480px) {
     .main {
         padding: 20px;
         flex-direction: column; /* Cambia la dirección de la flexión a columna */
         align-items: center; /* Centra los elementos horizontalmente */
-        height: 125vh; 
+        height: 115vh; 
     }
 
     .main img {
-        width: 400px;
+        width: 350px;
         height: auto;
         position: absolute; /* Establece la posición absoluta para la imagen */
         top: 340px; /* Ajusta la posición vertical de la imagen */
         left: 50%; /* Centra la imagen horizontalmente */
         transform: translateX(-50%); /* Centra la imagen horizontalmente */
+        opacity: 0.7;
     }
 
     button {
@@ -558,7 +578,7 @@ footer {
         cursor: pointer;
         font-size: 14px;
         display: block;
-        margin-top: 510px; /* Ajusta el margen superior del botón */
+        margin-top: 40px; /* Ajusta el margen superior del botón */
     }
 }
 
@@ -582,7 +602,7 @@ footer {
     
     .contenedor3 p {
         font-size: 1em; /* Tamaño del texto */
-        margin-top: 25px; /* Ajusta el margen inferior */
+        margin-top: 30px; /* Ajusta el margen inferior */
         margin-left: -50px; /* Margen izquierdo */
         margin-right: -50px;
 
@@ -595,10 +615,19 @@ footer {
 @media (max-width: 480px) {
     .main2 {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 20px; /* Reducir el espacio entre elementos */
+        gap: 5px; /* Reducir el espacio entre elementos */
         height: auto; /* Ajusta la altura automáticamente */
         padding: 10px; /* Reduce el espacio interno */
         width: auto; /* Ajusta el ancho automáticamente */
+    }
+
+    .main2 img {
+        width: 350px;
+        height: auto;
+        position: absolute; /* Establece la posición absoluta para la imagen */
+        top: 330px; /* Ajusta la posición vertical de la imagen */
+        left: 50%; /* Centra la imagen horizontalmente */
+        transform: translateX(-50%); /* Centra la imagen horizontalmente */
     }
 
     .texto-izquierda,
@@ -612,7 +641,8 @@ footer {
 
     .texto-derecha,
     .parrafo-derecha {
-        margin-top: 50px; /* Ajusta el margen superior de los elementos a la derecha */
+        margin-top: 350px; /* Ajusta el margen superior de los elementos a la derecha */
+        margin-bottom: 5px;
     }
 
     .parrafo-izquierda,
@@ -751,6 +781,10 @@ footer {
         height: auto; /* Ajusta la altura automáticamente */
         padding: 10px; /* Reduce el espacio interno */
         width: auto; /* Ajusta el ancho automáticamente */
+    }
+
+    .main6 h1{
+        font-size: 26px;
     }
 
     .contenido {
