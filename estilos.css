@@ -1,0 +1,818 @@
+/* Tipografías*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Quicksand", sans-serif;
+    ;
+}
+
+p {
+    font-family: "Ubuntu", sans-serif;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER Y DEBAJO LO QUE CONLLEVA */
+
+.header {
+    background-color: #535353;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 180px;
+    height: auto;
+}
+
+/* Contenedor principal con imagen y texto */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh; /* Altura de la pantalla completa */
+    background-color: black;
+    color: white;
+    padding: 80px;
+    
+}
+
+.main img {
+
+    width: 40%;
+    height: auto;
+    margin-top: -25px;
+    
+}
+
+.contenedor {
+
+    width: 50%;
+    padding-right: 20px; /* Espacio a la derecha */
+    text-align: left;
+    margin-top: -100px;
+    
+}
+
+.contenedor h1 {
+    color: white;
+    font-size: 3.5em;
+   
+    margin-top: -20px;
+}
+
+.contenedor3 p {
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.7em;
+    margin-top: -10px;
+}
+
+/* Botón de suscribirse con hover */
+button {
+    padding: 10px 80px;
+    background-color: #FFCF40;
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    margin-top: 60px;
+}
+
+button:hover {
+    background-color: #ffcf40d4;
+}
+
+a {
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+}
+
+
+/* SECCIONES CON DOS COLUMNAS PARA SUBTITULO Y TEXTO*/
+.main2 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Divide la sección en dos columnas de igual ancho */
+    gap: 150px;
+    /* Espacio entre las columnas */
+    background-color: rgb(10, 10, 10);
+    height: 500px;
+    padding: 20px;
+    /* Ajusta el espaciado interno según sea necesario */
+    width: 1485px;
+    position: relative;
+}
+
+/* TEXTOS DE LA PRIMERA SECCION // ALINEACIONES, COLOR,ETC */
+
+.texto-izquierda,
+.texto-derecha {
+    color: white;
+    margin-left: 50px;
+    /* Margen de 10px en el lado izquierdo */
+    margin-right: 50px;
+    margin-top: 50px;
+
+}
+
+.parrafo-izquierda,
+.parrafo-derecha {
+    color: white;
+    margin-left: 50px;
+    /* Margen de 50px en el lado izquierdo */
+    margin-right: 50px;
+
+}
+
+/* Estilos adicionales para cada texto si es necesario */
+
+.parrafo-izquierda , .parrafo-derecha{
+    margin-top: -190px;
+    padding: 0px;
+
+}
+
+p {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.negrita-amarillo {
+    font-weight: bold;
+    color: #FFCF40;
+}
+
+.main3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 1485px;
+    position: relative;
+    height: 1250px;
+
+}
+
+/* Eliminar espacio entre las secciones main */
+.main,
+.main2,
+.main3,
+.main4,
+.main5,
+.main6 {
+    color: #D9D9D9;
+    margin-bottom: 0.8px;
+    /* Ajusta el margen inferior para superponer las secciones */
+}
+
+/* SUBTITULO DE POR QUE USAR NUESTRA PLATAFORMA */
+.subtitulo-central {
+    margin-top: 20px;
+    /* Ajusta el margen superior según sea necesario */
+    grid-column: 1 / -1;
+    /* Ocupa todas las columnas */
+    text-align: center;
+    /* Centra el texto */
+    position: relative;
+    /* Cambia a posición relativa */
+    color: white;
+    /* Color del texto */
+}
+
+/* Ajuste de margen superior para imagen */
+
+.imagen-izquierda,
+.imagen-derecha {
+    display: flex;
+    /* Cambia el contenedor a un flexbox */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin-left: 20px;
+    /* Margen de 10px en el lado izquierdo */
+    margin-right: 40px;
+    margin-top: -400px;
+    /* Ajusta el margen superior según sea necesario */
+
+}
+
+.nueva-imagen-izquierda,
+.cuarta-imagen {
+    display: flex;
+    /* Cambia el contenedor a un flexbox */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    margin-left: 20px;
+    /* Margen de 20px en el lado izquierdo */
+    margin-right: 20px;
+    margin-top: -250px;
+    /* Ajusta el margen superior según sea necesario */
+
+    
+}
+/* juntamos las imagenes para dar cuenta que no son diferentes categorias */
+.imagen-izquierda , .nueva-imagen-izquierda {
+    margin-right: -95px;
+}
+
+.imagen-derecha, .cuarta-imagen {
+    margin-right:95px;
+}
+
+.imagen-contenedor {
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    color: white;
+}
+
+.imagen-contenedor img {
+    display: block;
+    /* Para asegurar que la imagen no se vea afectada por márgenes */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+}
+
+.imagen-contenedor h3 {
+    font-size: 1.5em;
+}
+
+.main4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 1485px;
+    position: relative;
+    height: 650px;
+}
+
+/* Para ajustar la posición de la última imagen */
+.nueva-imagen-derecha {
+    text-align: center;
+    margin-top: 150px;
+    /* Ajusta el margen superior para mover la imagen hacia abajo */
+}
+
+.contenido-izquierda {
+
+    text-align: left;
+    color: white;
+    margin-top: 100px;
+    color: white;
+    margin-left: 50px;
+    /* Margen de 10px en el lado izquierdo */
+    margin-right: 50px;
+
+}
+
+.main4 h1 {
+    font-size: 2em;
+}
+
+.main5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 1485px;
+    position: relative;
+    height: 650px;
+}
+
+.contenido-derecha {
+    color: white;
+    text-align: left;
+    margin-top: 100px;
+    margin-right: 40px;
+    margin-left: 20px;
+    /* Ajusta el margen del lado izquierdo */
+}
+
+.imagen-conteneiner {
+    text-align: center;
+}
+
+.imagen-conteneiner img {
+    display: block;
+    margin: 0 auto;
+}
+
+.nueva-imagen-izquierdaa {
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 20px;
+    /* Ajusta el margen del lado derecho */
+}
+
+.main5 h1 {
+    font-size: 2em;
+}
+
+.main6 h1 {
+    font-size: 2em;
+}
+
+.main6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 1485px;
+    position: relative;
+    height: 560px;
+    margin-bottom: -25px;
+    /* Agrega un margen inferior para crear espacio entre el contenido y el footer */
+
+}
+
+.contenido {
+
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    color: white;
+    margin-left: 50px;
+    /* Margen de 10px en el lado izquierdo */
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+.image-cont {
+    text-align: center;
+    /* Centra el contenido horizontalmente */
+    color: white;
+
+}
+
+.imagen-contenedor img {
+    display: block;
+    /* Para asegurar que la imagen no se vea afectada por márgenes */
+    margin: 0 auto;
+    /* Centra la imagen horizontalmente */
+
+}
+
+/* FORMULARIO */
+
+input[type="text"],
+input[type="email"] {
+    background-color: #fff;
+    border: none;
+    font-family: "Ubuntu", sans-serif;
+    ;
+}
+
+/* Estilos para el contenedor del formulario */
+.contenido form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra los elementos horizontalmente */
+}
+
+/* Estilos para los botones del formulario */
+form input[type="text"],
+form input[type="email"] {
+    width: 210px;
+    /* Ancho fijo para todos los botones */
+    height: 20px;
+    /* Altura fija para todos los botones */
+    border-radius: 20px;
+    /* Hace que los botones sean ovalados */
+    padding: 10px 20px;
+    /* Ajusta el padding para que se vean más proporcionados */
+    border: none;
+    /* Elimina el borde del botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px;
+    /* Tamaño del texto del botón */
+    margin-top: 20px;
+}
+
+form select,
+form button {
+    width: 250px;
+    /* Ancho fijo para todos los botones */
+    height: 40px;
+    /* Altura fija para todos los botones */
+    border-radius: 20px;
+    /* Hace que los botones sean ovalados */
+    padding: 10px 20px;
+    /* Ajusta el padding para que se vean más proporcionados */
+    border: none;
+    /* Elimina el borde del botón */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px;
+    /* Tamaño del texto del botón */
+    margin-top: 20px;
+    font-family: "Ubuntu", sans-serif;
+    ;
+}
+
+/* Estilo específico para el botón de "Participar" */
+form button#Participar {
+    background-color: #FFCF40;
+    /* Color de fondo amarillo */
+    color: black;
+    /* Color del texto negro */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #6E6E6E;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.columna1 img {
+    width: 160px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.columna1 p {
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    ;
+    max-width: 350px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.columna2 {
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.columna2 h3 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.redes-sociales img {
+    width: 60px;
+    margin: 5px;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* Ajusta el margen superior según sea necesario */
+    color: white;
+}
+
+.linea-horizontal {
+    width: 100%;
+    height: 2px;
+    /* Grosor de la línea */
+    background-color: #424141;
+    /* Color de la línea */
+    margin-bottom: 20px;
+    /* Espacio entre la línea y el texto */
+}
+
+.texto-derechos {
+    font-size: 16px;
+    /* Tamaño del texto */
+    font-family: "Ubuntu", sans-serif;
+    ;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .main {
+        padding: 20px;
+        flex-direction: column; /* Cambia la dirección de la flexión a columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        height: 100vh; 
+    }
+
+    .main img {
+        width: 100%; /* Ajusta la imagen al ancho del contenedor principal */
+        height: auto; /* Mantiene la proporción de aspecto */
+        margin-top: 20px; /* Ajusta el margen superior de la imagen */
+    }
+@media (max-width: 480px) {
+    .contenedor {
+        text-align: center; /* Centra el texto horizontalmente */
+        margin-top: 20px; /* Ajusta el margen superior */
+    }
+
+
+
+        .contenedor h1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            text-align: center;
+            font-size: 1.4em;
+        }
+    
+        .contenedor h1 span {
+            margin-right: 5px;
+        }
+    
+        .contenedor h1 {
+            display: inline-flex; /* Hace que las palabras se muestren en línea */
+        }
+    
+    
+    
+    
+    .contenedor3 p {
+        font-size: 1em; /* Tamaño del texto */
+        margin-bottom: 20px; /* Ajusta el margen inferior */
+        margin-left: 20px; /* Margen izquierdo */
+        position: relative; /* Posicionamiento relativo */
+        left: 0%; /* Centra horizontalmente */
+        transform: translateX(-50%); /* Corrección para centrar */
+    }
+}
+
+    button {
+        padding: 10px 20px; /* Ajusta el padding del botón */
+        font-size: 1em; /* Tamaño del texto del botón */
+        margin-top: 20px; /* Ajusta el margen superior del botón */
+    }
+
+}
+@media (max-width: 480px) {
+    .main2 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 20px; /* Reducir el espacio entre elementos */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px; /* Reduce el espacio interno */
+        width: auto; /* Ajusta el ancho automáticamente */
+    }
+
+    .texto-izquierda,
+    .parrafo-izquierda,
+    .texto-derecha,
+    .parrafo-derecha {
+        margin-left: 20px; /* Ajusta el margen izquierdo */
+        margin-right: 20px; /* Ajusta el margen derecho */
+        margin-top: 20px; /* Ajusta el margen superior */
+    }
+
+    .texto-derecha,
+    .parrafo-derecha {
+        margin-top: 50px; /* Ajusta el margen superior de los elementos a la derecha */
+    }
+
+    .parrafo-izquierda,
+    .parrafo-derecha {
+        margin-top: 10px; /* Ajusta el margen superior */
+    }
+
+    .parrafo-izquierda,
+    .parrafo-derecha {
+        margin-top: 10px; /* Ajusta el margen superior */
+    }
+
+    .texto-izquierda {
+        order: 1; /* Establece el orden del elemento */
+    }
+
+    .parrafo-izquierda {
+        order: 2; /* Establece el orden del elemento */
+    }
+
+    .imagen-intermedia {
+        order: 2; /* Establece el orden de la imagen */
+        justify-self: center; /* Centra la imagen horizontalmente */
+    }
+
+    .texto-derecha {
+        order: 3; /* Establece el orden del elemento */
+    }
+
+    .parrafo-derecha {
+        order: 4; /* Establece el orden del elemento */
+    }
+
+    p {
+        font-size: 1em; /* Cambia el tamaño de la tipografía de los párrafos */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Cambia el tamaño de la tipografía de los subtítulos */
+    }
+
+    .negrita-amarillo {
+        font-size: 1em; /* Cambia el tamaño de la tipografía de los elementos en negrita */
+    }
+}
+
+@media (max-width: 480px) {
+    .main3 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 50px; /* Reduce el espacio entre elementos */
+        padding: 10px; /* Ajusta el padding */
+        width: auto; /* Ancho automático para adaptarse al contenido */
+        height: auto; /* Altura automática para adaptarse al contenido */
+    }
+
+    .imagen-izquierda,
+    .imagen-derecha,
+    .nueva-imagen-izquierda,
+    .cuarta-imagen {
+        margin-left: 0; /* Elimina el margen izquierdo */
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-top: 20px; /* Ajusta el margen superior */
+    }
+}
+
+    
+
+@media (max-width: 480px) {
+    
+    .main4 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 60px; /* Reducir el espacio entre elementos */
+        height: 600px; /* Ajusta la altura automáticamente */
+        padding: 10px; /* Reduce el espacio interno */
+        width: auto; /* Ajusta el ancho automáticamente */
+    }
+
+    .contenido-izquierda {
+        margin-top: 60px; /* Ajusta el margen superior para mover el contenido más abajo */
+        margin-left: 20px; /* Ajusta el margen izquierdo */
+        margin-right: 20px; /* Ajusta el margen derecho */
+    }
+
+    .main4 h1 {
+        font-size: 1.5em; /* Reduce el tamaño de la tipografía del título */
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin-top: -10px; /* Ajusta el margen superior para mover el título más arriba */
+    }
+
+    .nueva-imagen-derecha img {
+        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+        height: auto; /* Mantiene la proporción de aspecto */
+        max-height: 250px; /* Establece la altura máxima de la imagen */
+        margin-top: -150px; /* Ajusta el margen superior de la imagen */
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 480px) {
+    .main5 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 60px; /* Reducir el espacio entre elementos */
+        height: 600px; /* Ajusta la altura automáticamente */
+        padding: 10px; /* Reduce el espacio interno */
+        width: auto; /* Ajusta el ancho automáticamente */
+    }
+
+    .contenido-derecha {
+        margin-top: 20px; /* Ajusta el margen superior */
+        margin-left: 20px; /* Ajusta el margen izquierdo */
+        margin-right: 20px; /* Ajusta el margen derecho */
+        text-align: left; /* Alinea el texto a la izquierda */
+    }
+
+    .nueva-imagen-izquierdaa {
+        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+        height: auto; /* Mantiene la proporción de aspecto */
+        max-height: 250px; /* Establece la altura máxima de la imagen */
+        margin-top: -150px; /* Ajusta el margen superior de la imagen */
+        margin-bottom: 50px;
+    }
+
+    .imagen-conteneiner {
+        margin-top: 60px; /* Ajusta el margen superior */
+    }
+
+    .nueva-imagen-izquierdaa img {
+        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+        height: auto; /* Mantiene la proporción de aspecto */
+        max-height: 250px; /* Establece la altura máxima de la imagen */
+    }
+}
+@media (max-width: 480px) {
+    .main6 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 20px; /* Reducir el espacio entre elementos */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px; /* Reduce el espacio interno */
+        width: auto; /* Ajusta el ancho automáticamente */
+    }
+
+    .contenido {
+        text-align: center; /* Centra el texto horizontalmente */
+        margin: -40px; /* Ajusta el margen */
+        margin-top: 40px;
+    }
+    .image-cont{
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .footer1 {
+        gap: 20px; /* Reducir el espacio entre elementos */
+        padding: 10px; /* Reducir el espacio interno */
+        width: 90%; /* Reducir el ancho */
+    }
+
+    .columna1 img {
+        width: 120px; /* Reducir el tamaño de la imagen */
+        margin-top: 30px; /* Ajustar el margen superior */
+        margin-left: 20px; /* Ajustar el margen izquierdo */
+    }
+
+    .columna1 p {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        max-width: 280px; /* Reducir el ancho máximo del texto */
+        margin-top: 10px; /* Ajustar el margen superior */
+        margin-left: 20px; /* Ajustar el margen izquierdo */
+    }
+
+    .redes-sociales {
+        display: flex; /* Cambiar a un diseño de línea */
+        flex-direction: row; /* Alinear elementos en fila */
+    }
+
+    .redes-sociales img {
+        width: 40px; /* Reducir el tamaño de las imágenes de redes sociales */
+        margin: 3px; /* Reducir el espacio entre las imágenes */
+    }
+
+    .footer2 {
+        margin-top: 10px; /* Reducir el margen superior */
+    }
+
+    .texto-derechos {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        margin-top: 5px; /* Reducir el margen superior */
+        margin-bottom: 20px; /* Reducir el margen inferior */
+    }
+}
