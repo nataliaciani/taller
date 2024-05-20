@@ -556,6 +556,7 @@ footer {
     .main img {
         width: 80%;
         margin: 20px auto;
+        opacity: 0.8;
     }
 
     .contenedor {
@@ -581,7 +582,7 @@ footer {
     }
 
     button {
-        padding: 10px 40px;
+        padding: 10px 70px;
         font-size: 14px;
         margin: 40px auto 20px auto; /* Incrementa el margen superior para ajustar la posición vertical */
         display: block;
