@@ -16,10 +16,10 @@ p {
     font-family: "Ubuntu", sans-serif;
     
 }
-
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /* HEADER Y DEBAJO LO QUE CONLLEVA */
@@ -56,7 +56,7 @@ body {
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    opacity: 0.7;
+    opacity: 0.8;
     
 }
 
@@ -534,85 +534,92 @@ footer {
 
 /* RESPONSIVE */
 
-@media (max-width: 480px) {
-.header {
-    background-color: #535353;
-    color: #fff;
-    padding: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@media (max-width: 500px) {
+    .header {
+        padding: 5px;
+    }
 
-.header img {
-    width: 105px;
-    height: auto;
+    .header img {
+        width: 100px;
+    }
 }
-}
-
-
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .main {
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
-        flex-direction: column; /* Cambia la dirección de la flexión a columna */
-        align-items: center; /* Centra los elementos horizontalmente */
-        height: 115vh; 
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        width: 100%;
+        box-sizing: border-box; /* Incluye padding y border en el ancho total */
     }
 
     .main img {
-        width: 350px;
-        height: auto;
-        position: absolute; /* Establece la posición absoluta para la imagen */
-        top: 340px; /* Ajusta la posición vertical de la imagen */
-        left: 50%; /* Centra la imagen horizontalmente */
-        transform: translateX(-50%); /* Centra la imagen horizontalmente */
-        opacity: 0.7;
+        width: 80%;
+        margin: 20px auto;
     }
 
-    button {
-        padding: 10px 80px;
-        background-color: #FFCF40;
-        color: black;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer;
-        font-size: 14px;
-        display: block;
-        margin-top: 40px; /* Ajusta el margen superior del botón */
-    }
-}
-
-@media (max-width: 480px) {
     .contenedor {
-        text-align: center; /* Centra el texto horizontalmente */
-        margin-top: 10px; /* Ajusta el margen superior */
+        width: 100%;
+        padding-right: 0;
+        margin-top: 0;
+        text-align: center; /* Centra el texto */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Alinea los hijos al centro */
+        box-sizing: border-box; /* Incluye padding y border en el ancho total */
     }
     
     .contenedor h1 {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-            text-align: center;
-            font-size: 1.4em;
-            margin-left: -20px;
-            margin-right: -20px;
-            margin-top: 15px;
-        }
-    
-    .contenedor3 p {
-        font-size: 1em; /* Tamaño del texto */
-        margin-top: 30px; /* Ajusta el margen inferior */
-        margin-left: -50px; /* Margen izquierdo */
-        margin-right: -50px;
+        font-size: 1.8em;
+        margin-top: 20px;
+    }
 
+    .contenedor3 p {
+        font-size: 1.2em;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    button {
+        padding: 10px 40px;
+        font-size: 14px;
+        margin: 40px auto 20px auto; /* Incrementa el margen superior para ajustar la posición vertical */
+        display: block;
     }
 }
 
 
+@media (max-width: 500px) {
+    
+    .main4 {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 60px; /* Reducir el espacio entre elementos */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px; /* Reduce el espacio interno */
+        width: auto; /* Ajusta el ancho automáticamente */
+    }
 
+    .contenido-izquierda {
+        margin-top: 60px; /* Ajusta el margen superior para mover el contenido más abajo */
+        margin-left: 20px; /* Ajusta el margen izquierdo */
+        margin-right: 20px; /* Ajusta el margen derecho */
+    }
 
-@media (max-width: 480px) {
+    .main4 h1 {
+        font-size: 1.5em; /* Reduce el tamaño de la tipografía del título */
+        text-align: left; /* Alinea el texto a la izquierda */
+        margin-top: -10px; /* Ajusta el margen superior para mover el título más arriba */
+    }
+
+    .nueva-imagen-derecha img {
+        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+        height: auto; /* Mantiene la proporción de aspecto */
+        max-height: 250px; /* Establece la altura máxima de la imagen */
+        margin-top: -150px; /* Ajusta el margen superior de la imagen */
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 500px) {
     .main2 {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
         gap: 5px; /* Reducir el espacio entre elementos */
@@ -688,8 +695,7 @@ footer {
         font-size: 1em; /* Cambia el tamaño de la tipografía de los elementos en negrita */
     }
 }
-
-@media (max-width: 480px) {
+@media (max-width: 500px)  {
     .main3 {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
         gap: 50px; /* Reduce el espacio entre elementos */
@@ -707,40 +713,7 @@ footer {
         margin-top: 20px; /* Ajusta el margen superior */
     }
 }
-
-    
-
-@media (max-width: 480px) {
-    
-    .main4 {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 60px; /* Reducir el espacio entre elementos */
-        height: 600px; /* Ajusta la altura automáticamente */
-        padding: 10px; /* Reduce el espacio interno */
-        width: auto; /* Ajusta el ancho automáticamente */
-    }
-
-    .contenido-izquierda {
-        margin-top: 60px; /* Ajusta el margen superior para mover el contenido más abajo */
-        margin-left: 20px; /* Ajusta el margen izquierdo */
-        margin-right: 20px; /* Ajusta el margen derecho */
-    }
-
-    .main4 h1 {
-        font-size: 1.5em; /* Reduce el tamaño de la tipografía del título */
-        text-align: left; /* Alinea el texto a la izquierda */
-        margin-top: -10px; /* Ajusta el margen superior para mover el título más arriba */
-    }
-
-    .nueva-imagen-derecha img {
-        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
-        height: auto; /* Mantiene la proporción de aspecto */
-        max-height: 250px; /* Establece la altura máxima de la imagen */
-        margin-top: -150px; /* Ajusta el margen superior de la imagen */
-        margin-bottom: 50px;
-    }
-}
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .main5 {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
         gap: 60px; /* Reducir el espacio entre elementos */
@@ -774,7 +747,7 @@ footer {
         max-height: 250px; /* Establece la altura máxima de la imagen */
     }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .main6 {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
         gap: 20px; /* Reducir el espacio entre elementos */
@@ -797,7 +770,7 @@ footer {
     }
 
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .footer1 {
         flex-direction: column; /* Cambia la dirección de la flexión a columna */
         align-items: center; /* Centra los elementos horizontalmente */
