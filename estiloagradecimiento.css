@@ -30,14 +30,14 @@ body {
 .header {
     background-color: #535353;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header img {
-    width: 180px;
+    width: 150px;
     height: auto;
 }
 
