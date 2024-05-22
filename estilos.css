@@ -16,11 +16,15 @@ p {
     font-family: "Ubuntu", sans-serif;
     
 }
-body {
+
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
+
 
 /* HEADER Y DEBAJO LO QUE CONLLEVA */
 
@@ -165,17 +169,7 @@ h2 {
     color: #FFCF40;
 }
 
-.main3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 150px;
-    background-color: rgb(10, 10, 10);
-    padding: 20px;
-    width: 1485px;
-    position: relative;
-    height: 1250px;
 
-}
 
 /* Eliminar espacio entre las secciones main */
 .main,
@@ -186,81 +180,71 @@ h2 {
 .main6 {
     color: #D9D9D9;
     margin-bottom: 0.8px;
+    
     /* Ajusta el margen inferior para superponer las secciones */
 }
 
-/* SUBTITULO DE POR QUE USAR NUESTRA PLATAFORMA */
+/* Estilos generales para pantallas grandes */
+.main3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+    background-color: rgb(10, 10, 10);
+    padding: 20px;
+    width: 1485px;
+    position: relative;
+    height: 1250px;
+}
+
 .subtitulo-central {
     margin-top: 20px;
-    /* Ajusta el margen superior según sea necesario */
     grid-column: 1 / -1;
-    /* Ocupa todas las columnas */
     text-align: center;
-    /* Centra el texto */
     position: relative;
-    /* Cambia a posición relativa */
     color: white;
-    /* Color del texto */
 }
 
-/* Ajuste de margen superior para imagen */
-
+/* Ajuste de margen superior para imágenes */
 .imagen-izquierda,
-.imagen-derecha {
-    display: flex;
-    /* Cambia el contenedor a un flexbox */
-    justify-content: center;
-    /* Centra horizontalmente */
-    align-items: center;
-    /* Centra verticalmente */
-    margin-left: 20px;
-    /* Margen de 10px en el lado izquierdo */
-    margin-right: 40px;
-    margin-top: -400px;
-    /* Ajusta el margen superior según sea necesario */
-
-}
-
+.imagen-derecha,
 .nueva-imagen-izquierda,
 .cuarta-imagen {
     display: flex;
-    /* Cambia el contenedor a un flexbox */
     justify-content: center;
-    /* Centra horizontalmente */
     align-items: center;
-    /* Centra verticalmente */
     margin-left: 20px;
-    /* Margen de 20px en el lado izquierdo */
     margin-right: 20px;
-    margin-top: -250px;
-    /* Ajusta el margen superior según sea necesario */
-
-    
 }
-/* juntamos las imagenes para dar cuenta que no son diferentes categorias */
-.imagen-izquierda , .nueva-imagen-izquierda {
+
+.imagen-izquierda,
+.nueva-imagen-izquierda {
+    margin-top: -250px;
+}
+
+.imagen-derecha,
+.cuarta-imagen {
+    margin-top: -250px;
+}
+
+/* Estilo adicional para agrupar imágenes de diferentes categorías */
+.imagen-izquierda, .nueva-imagen-izquierda {
     margin-right: -95px;
 }
 
 .imagen-derecha, .cuarta-imagen {
-    margin-right:95px;
+    margin-right: 95px;
 }
 
 .imagen-contenedor {
     text-align: center;
-    /* Centra el contenido horizontalmente */
     color: white;
-}
-
-.imagen-contenedor img {
-    display: block;
-    /* Para asegurar que la imagen no se vea afectada por márgenes */
-    margin: 0 auto;
-    /* Centra la imagen horizontalmente */
 }
 
 .imagen-contenedor h3 {
     font-size: 1.5em;
+}
+.imagen-contenedor p{
+    font-size: 1.4em;
 }
 
 .main4 {
@@ -440,6 +424,7 @@ form button {
     margin-top: 20px;
     font-family: "Ubuntu", sans-serif;
     ;
+    
 }
 
 /* Estilo específico para el botón de "Participar" */
@@ -556,7 +541,6 @@ footer {
     .main img {
         width: 80%;
         margin: 20px auto;
-        opacity: 0.8;
     }
 
     .contenedor {
@@ -582,7 +566,7 @@ footer {
     }
 
     button {
-        padding: 10px 70px;
+        padding: 10px 100px;
         font-size: 14px;
         margin: 40px auto 20px auto; /* Incrementa el margen superior para ajustar la posición vertical */
         display: block;
@@ -613,7 +597,7 @@ footer {
     }
 
     .nueva-imagen-derecha img {
-        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+        max-width: 80%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
         height: auto; /* Mantiene la proporción de aspecto */
         max-height: 250px; /* Establece la altura máxima de la imagen */
         margin-top: -150px; /* Ajusta el margen superior de la imagen */
@@ -630,10 +614,10 @@ footer {
     }
 
     .main2 img {
-        width: 350px;
+        max-width: 80%;
         height: auto;
         position: absolute; /* Establece la posición absoluta para la imagen */
-        top: 330px; /* Ajusta la posición vertical de la imagen */
+        top: 380px; /* Ajusta la posición vertical de la imagen */
         left: 50%; /* Centra la imagen horizontalmente */
         transform: translateX(-50%); /* Centra la imagen horizontalmente */
     }
@@ -696,24 +680,64 @@ footer {
         font-size: 1em; /* Cambia el tamaño de la tipografía de los elementos en negrita */
     }
 }
-@media (max-width: 500px)  {
+@media only screen and (max-width: 500px) {
     .main3 {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 50px; /* Reduce el espacio entre elementos */
-        padding: 10px; /* Ajusta el padding */
+        gap: 20px; /* Reduce el espacio entre elementos */
+        padding: 10px; /* Reduce el relleno */
         width: auto; /* Ancho automático para adaptarse al contenido */
         height: auto; /* Altura automática para adaptarse al contenido */
+        
     }
 
+    /* Ajuste de margen superior para imágenes */
     .imagen-izquierda,
     .imagen-derecha,
     .nueva-imagen-izquierda,
     .cuarta-imagen {
-        margin-left: 0; /* Elimina el margen izquierdo */
-        margin-right: 0; /* Elimina el margen derecho */
-        margin-top: 20px; /* Ajusta el margen superior */
+        margin-top: 20px; /* Espacio entre imágenes */
+        margin-left:20px; /* Centra horizontalmente */
+        margin-right: auto; /* Centra horizontalmente */
+      
+    }
+
+    /* Estilo adicional para agrupar imágenes de diferentes categorías */
+    .imagen-izquierda,
+    .nueva-imagen-izquierda {
+        margin-right: 0; /* Reinicia el margen derecho */
+    }
+
+    .imagen-derecha,
+    .cuarta-imagen {
+        margin-right: 0; /* Reinicia el margen derecho */
+    }
+
+    /* Ajuste de tamaño de texto */
+    .imagen-contenedor h3 {
+        font-size: 1.4em; /* Reducción del tamaño de fuente */
+        margin-left: 20px; /* Ajusta el margen izquierdo */
+        margin-right: 20px; /* Ajusta el margen derecho */
+    }
+
+    .imagen-contenedor p {
+        font-size: 1.1em; /* Reducción del tamaño de fuente */
+        margin-left: 20px; /* Ajusta el margen izquierdo */
+        margin-right: 20px; /* Ajusta el margen derecho */
+    }
+
+    /* Ajuste de tamaño de imágenes */
+    .imagen-contenedor img {
+        max-width: 80%; /* Establece el ancho máximo al 100% */
+        height: auto; /* Mantiene la relación de aspecto */
     }
 }
+
+
+
+
+
+
+
 @media (max-width: 500px) {
     .main5 {
         grid-template-columns: 1fr; /* Cambia a una sola columna */
@@ -731,11 +755,12 @@ footer {
     }
 
     .nueva-imagen-izquierdaa {
-        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+        max-width: 80%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
         height: auto; /* Mantiene la proporción de aspecto */
         max-height: 250px; /* Establece la altura máxima de la imagen */
         margin-top: -150px; /* Ajusta el margen superior de la imagen */
         margin-bottom: 50px;
+        margin-left: 20px;
     }
 
     .imagen-conteneiner {
@@ -755,20 +780,26 @@ footer {
         height: auto; /* Ajusta la altura automáticamente */
         padding: 10px; /* Reduce el espacio interno */
         width: auto; /* Ajusta el ancho automáticamente */
+        
     }
 
     .main6 h1{
         font-size: 26px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .contenido {
+        
         text-align: center; /* Centra el texto horizontalmente */
         margin: -40px; /* Ajusta el margen */
         margin-top: 40px;
+        
     }
     .image-cont{
         display: none;
     }
+    
 
 }
 @media (max-width: 500px) {
@@ -791,14 +822,14 @@ footer {
     }
 
     .columna1 p {
-        font-size: 14px; /* Reducir el tamaño del texto */
+        font-size: 18px; /* Reducir el tamaño del texto */
         max-width: 280px; /* Reducir el ancho máximo del texto */
         margin-top: 10px; /* Ajustar el margen superior */
         margin-left: 20px; /* Ajustar el margen izquierdo */
     }
 
     .columna2 {
-        font-size: 14px;
+        font-size: 18px;
         margin-top: -30px; /* Ajusta el margen superior entre las columnas */
         margin-left: 35px;
        
@@ -815,8 +846,9 @@ footer {
     }
 
     .redes-sociales img {
-        width: 40px; /* Reducir el tamaño de las imágenes de redes sociales */
-        margin: 3px; /* Reducir el espacio entre las imágenes */
+        width: 50px; /* Reducir el tamaño de las imágenes de redes sociales */
+        margin: 10px; /* Reducir el espacio entre las imágenes */
+    
     }
 
 
