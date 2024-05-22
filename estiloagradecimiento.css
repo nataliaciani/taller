@@ -173,18 +173,27 @@ footer {
 }
 
 @media (max-width: 500px) {
+    
     .agradecimiento {
         height: 110vh;
-        margin-top: -220px;
+        margin-top: -240px;
+        margin-left: 20px;
         margin-right: 20px;
+        text-align: center;
     }
+/* Estilos para párrafos en pantallas más pequeñas */
+
+   /* Estilos para párrafos en pantallas más pequeñas */
 
     .contenedor p {
-        font-size: 1.0em;
-        margin-right: 60px;
-        margin-left: 70px;
+        font-size: 1.1em; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+        margin-top: 30px;
+        margin-right: 20px; /* Margen derecho reducido */
+        margin-left: 20px; /* Margen izquierdo reducido */
+ 
     }
-    
+
+
 
     .paso {
         margin-top: 0px;
@@ -206,6 +215,7 @@ footer {
         margin-top: -220px;
         grid-template-columns: 1fr;
         gap: 10px;
+      
     }
 
     .paso img {
@@ -213,33 +223,42 @@ footer {
     }
 
     .paso p {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .footer1 {
         flex-direction: column;
         align-items: left;
+        padding: 10px;
     }
 
     .columna1 img {
         width: 120px;
         margin-right: 0;
-        margin-top: 20px;
+        margin-top: 10px;
         margin-left: 15px;
     }
 
     .columna1 h3 {
-        font-size: 16px;
-        max-width: none;
+        font-size: 18px;
         margin-top: 20px;
         margin-left: 15px;
         margin-bottom: 10px;
     }
 
+    .redes-sociales {
+        display: flex; /* Cambiar a un diseño de línea */
+        flex-direction: row; /* Alinear elementos en fila */
+    }
+
     .redes-sociales img {
-        width: 40px;
-        margin: 10px;
-        margin-right: 0;
-        margin-left: 15px;
+        width: 50px; /* Reducir el tamaño de las imágenes de redes sociales */
+        margin: 10px; /* Reducir el espacio entre las imágenes */
+    
+    }
+    .texto-derechos {
+        font-size: 14px; /* Reducir el tamaño del texto */
+        margin-top: 5px; /* Reducir el margen superior */
+        margin-bottom: 20px; /* Reducir el margen inferior */
     }
 }
