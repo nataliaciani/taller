@@ -25,7 +25,6 @@ html, body {
     overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
-
 /* HEADER Y DEBAJO LO QUE CONLLEVA */
 
 .header {
@@ -42,12 +41,12 @@ html, body {
     height: auto;
 }
 
-/* Contenedor principal con imagen y texto */
+/* MAIN */
 .main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70vh; /* Altura de la pantalla completa */
+    height: 70vh; 
     background-color:rgb(10, 10, 10);
     color: white;
     padding: 80px;
@@ -55,37 +54,35 @@ html, body {
 }
 
 .main img {
-
     width: 40%;
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
     opacity: 0.8;
-    
+    margin-right: 40px;
 }
 
 .contenedor {
-
     width: 50%;
-    padding-right: 20px; /* Espacio a la derecha */
+    padding-right: 20px; 
     text-align: left;
-    margin-top: -100px;
+    margin-top: -10px;
+    margin-left: 40px;
     
 }
 
 .contenedor h1 {
     color: white;
-    font-size: 2.8em;
-   
+    font-size: 45px;
     margin-top: -20px;
 }
 
 .contenedor3 p {
     color: white;
     font-family: "Ubuntu", sans-serif;
-    font-size: 1.5em;
+    font-size: 24px;
     margin-top: -10px;
-    margin-right: 200px;
+    margin-right: 110px;
 }
 
 /* Botón de suscribirse con hover */
@@ -96,7 +93,7 @@ button {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     margin-top: 60px;
 }
@@ -106,50 +103,51 @@ button:hover {
 }
 
 a {
-    text-decoration: none;
-    /* Elimina el subrayado del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
 
-
-/* SECCIONES CON DOS COLUMNAS PARA SUBTITULO Y TEXTO*/
+/* MAIN 2 */
 .main2 {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Divide la sección en dos columnas de igual ancho */
     gap: 150px;
-    /* Espacio entre las columnas */
     background-color: rgb(10, 10, 10);
     height: 500px;
     padding: 20px;
-    /* Ajusta el espaciado interno según sea necesario */
     width: 1485px;
     position: relative;
 }
 
 /* TEXTOS DE LA PRIMERA SECCION // ALINEACIONES, COLOR,ETC */
-
-.texto-izquierda,
-.texto-derecha {
+.texto-izquierda{
     color: white;
-    margin-left: 50px;
-    /* Margen de 10px en el lado izquierdo */
+    margin-left: 100px;
     margin-right: 50px;
     margin-top: 50px;
-
 }
 
-.parrafo-izquierda,
+.texto-derecha {
+    color: white;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.parrafo-izquierda{
+    color: white;
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
 .parrafo-derecha {
     color: white;
-    margin-left: 50px;
-    /* Margen de 50px en el lado izquierdo */
-    margin-right: 50px;
-
+    margin-left: 20px;
+    margin-right: 80px;
 }
 
 /* Estilos adicionales para cada texto si es necesario */
-
 .parrafo-izquierda , .parrafo-derecha{
     margin-top: -190px;
     padding: 0px;
@@ -157,19 +155,17 @@ a {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 24px;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 32px;
 }
 
 .negrita-amarillo {
     font-weight: bold;
     color: #FFCF40;
 }
-
-
 
 /* Eliminar espacio entre las secciones main */
 .main,
@@ -180,11 +176,9 @@ h2 {
 .main6 {
     color: #D9D9D9;
     margin-bottom: 0.8px;
-    
-    /* Ajusta el margen inferior para superponer las secciones */
 }
 
-/* Estilos generales para pantallas grandes */
+/* MAIN 3*/
 .main3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -197,14 +191,14 @@ h2 {
 }
 
 .subtitulo-central {
-    margin-top: 20px;
+    margin-top: 40px;
     grid-column: 1 / -1;
     text-align: center;
     position: relative;
     color: white;
+    margin-bottom: -200px;
 }
 
-/* Ajuste de margen superior para imágenes */
 .imagen-izquierda,
 .imagen-derecha,
 .nueva-imagen-izquierda,
@@ -212,8 +206,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .imagen-izquierda,
@@ -226,13 +218,12 @@ h2 {
     margin-top: -250px;
 }
 
-/* Estilo adicional para agrupar imágenes de diferentes categorías */
 .imagen-izquierda, .nueva-imagen-izquierda {
-    margin-right: -95px;
+    margin-right: -160px;
 }
 
 .imagen-derecha, .cuarta-imagen {
-    margin-right: 95px;
+    margin-left: -200px;
 }
 
 .imagen-contenedor {
@@ -241,12 +232,18 @@ h2 {
 }
 
 .imagen-contenedor h3 {
-    font-size: 1.5em;
-}
-.imagen-contenedor p{
-    font-size: 1.4em;
+    font-size: 26px;
 }
 
+.imagen-contenedor h2 {
+    font-size: 32px;
+}
+
+.imagen-contenedor p{
+    font-size: 24px;
+}
+
+/* MAIN 4*/
 .main4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -258,29 +255,31 @@ h2 {
     height: 650px;
 }
 
-/* Para ajustar la posición de la última imagen */
 .nueva-imagen-derecha {
     text-align: center;
     margin-top: 150px;
-    /* Ajusta el margen superior para mover la imagen hacia abajo */
+    margin-left: -70px;
+    margin-right: 70px;
 }
 
 .contenido-izquierda {
-
     text-align: left;
     color: white;
     margin-top: 100px;
     color: white;
-    margin-left: 50px;
-    /* Margen de 10px en el lado izquierdo */
+    margin-left: 100px;
     margin-right: 50px;
-
 }
 
 .main4 h1 {
-    font-size: 2em;
+    font-size: 32px;
 }
 
+.main4 p {
+    font-size: 24px;
+}
+
+/* MAIN 5*/
 .main5 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -296,9 +295,8 @@ h2 {
     color: white;
     text-align: left;
     margin-top: 100px;
-    margin-right: 40px;
-    margin-left: 20px;
-    /* Ajusta el margen del lado izquierdo */
+    margin-right: 50px;
+    margin-left: 100px;
 }
 
 .imagen-conteneiner {
@@ -312,17 +310,26 @@ h2 {
 
 .nueva-imagen-izquierdaa {
     text-align: center;
-    margin-top: 100px;
-    margin-right: 20px;
-    /* Ajusta el margen del lado derecho */
+    margin-top: 130px;
+    margin-right: 70px;
+    margin-left: -70px;
 }
 
 .main5 h1 {
-    font-size: 2em;
+    font-size: 32px;
 }
 
+.main5 p {
+    font-size: 24px;
+}
+
+/* MAIN 6*/
 .main6 h1 {
-    font-size: 2em;
+    font-size: 32px;
+}
+
+.main6 p {
+    font-size: 24px;
 }
 
 .main6 {
@@ -335,40 +342,32 @@ h2 {
     position: relative;
     height: 560px;
     margin-bottom: -25px;
-    /* Agrega un margen inferior para crear espacio entre el contenido y el footer */
-
 }
 
 .contenido {
-
     text-align: center;
     color: white;
     margin-top: 100px;
     color: white;
     margin-left: 50px;
-    /* Margen de 10px en el lado izquierdo */
     margin-right: 20px;
-    margin-top: 20px;
-
+    margin-top: 50px;
 }
 
 .image-cont {
     text-align: center;
-    /* Centra el contenido horizontalmente */
     color: white;
-
+    margin-left: 80px;
+    margin-right: 70px;
+    margin-top: -60px;
 }
 
 .imagen-contenedor img {
-    display: block;
-    /* Para asegurar que la imagen no se vea afectada por márgenes */
-    margin: 0 auto;
-    /* Centra la imagen horizontalmente */
-
+    display: block; /* Para asegurar que la imagen no se vea afectada por márgenes */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 /* FORMULARIO */
-
 input[type="text"],
 input[type="email"] {
     background-color: #fff;
@@ -382,63 +381,45 @@ input[type="email"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centra los elementos horizontalmente */
 }
 
 /* Estilos para los botones del formulario */
 form input[type="text"],
 form input[type="email"] {
     width: 210px;
-    /* Ancho fijo para todos los botones */
     height: 20px;
-    /* Altura fija para todos los botones */
-    border-radius: 20px;
-    /* Hace que los botones sean ovalados */
+    border-radius: 20px; /* Hace que los botones sean ovalados */
     padding: 10px 20px;
-    /* Ajusta el padding para que se vean más proporcionados */
     border: none;
-    /* Elimina el borde del botón */
-    cursor: pointer;
-    /* Cambia el cursor al pasar sobre el botón */
-    font-size: 16px;
-    /* Tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto del botón */
     margin-top: 20px;
 }
 
 form select,
 form button {
     width: 250px;
-    /* Ancho fijo para todos los botones */
     height: 40px;
-    /* Altura fija para todos los botones */
     border-radius: 20px;
-    /* Hace que los botones sean ovalados */
     padding: 10px 20px;
-    /* Ajusta el padding para que se vean más proporcionados */
     border: none;
-    /* Elimina el borde del botón */
     cursor: pointer;
-    /* Cambia el cursor al pasar sobre el botón */
-    font-size: 16px;
-    /* Tamaño del texto del botón */
+    color: #424141;
+    font-size: 16px; /* Tamaño del texto del botón */
     margin-top: 20px;
     font-family: "Ubuntu", sans-serif;
     ;
-    
 }
 
-/* Estilo específico para el botón de "Participar" */
+/* Estilo específico para el botón de "enviar" */
 form button#Participar {
     background-color: #FFCF40;
-    /* Color de fondo amarillo */
     color: black;
-    /* Color del texto negro */
     font-weight: bold;
-    /* Texto en negrita */
+    font-size: 18px;
 }
 
 /* FOOTER */
-
 footer {
     background-color: #6E6E6E;
     color: #fff;
@@ -459,28 +440,30 @@ footer {
 
 .columna1 img {
     width: 160px;
-    margin-right: 20px;
+    margin-right: 50px;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 .columna1 p {
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Ubuntu", sans-serif;
     ;
-    max-width: 350px;
+    max-width: 450px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 100px;
+    margin-right: 50px;
 }
 
 .columna2 {
-    margin-left: auto;
+    margin-left: 200px;
     margin-top: 50px;
 }
 
 .columna2 h3 {
     margin-bottom: 20px;
     margin-top: 20px;
+    font-size: 20px;
 }
 
 .redes-sociales img {
@@ -493,23 +476,18 @@ footer {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    /* Ajusta el margen superior según sea necesario */
     color: white;
 }
 
 .linea-horizontal {
     width: 100%;
     height: 2px;
-    /* Grosor de la línea */
     background-color: #424141;
-    /* Color de la línea */
     margin-bottom: 20px;
-    /* Espacio entre la línea y el texto */
 }
 
 .texto-derechos {
-    font-size: 16px;
-    /* Tamaño del texto */
+    font-size: 18px;
     font-family: "Ubuntu", sans-serif;
     ;
     margin-top: 10px;
@@ -518,14 +496,13 @@ footer {
 
 
 /* RESPONSIVE */
-
 @media (max-width: 500px) {
     .header {
         padding: 5px;
     }
 
     .header img {
-        width: 100px;
+        width: 120px;
     }
 }
 @media (max-width: 500px) {
@@ -533,7 +510,7 @@ footer {
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        height: auto; /* Permite que la altura se ajuste automáticamente */
+        height: auto; 
         width: 100%;
         box-sizing: border-box; /* Incluye padding y border en el ancho total */
     }
@@ -547,32 +524,33 @@ footer {
         width: 100%;
         padding-right: 0;
         margin-top: 0;
-        text-align: center; /* Centra el texto */
+        text-align: center; 
         display: flex;
         flex-direction: column;
-        align-items: center; /* Alinea los hijos al centro */
-        box-sizing: border-box; /* Incluye padding y border en el ancho total */
+        align-items: center; 
+        box-sizing: border-box; 
+        margin-left: 5px;
     }
     
     .contenedor h1 {
-        font-size: 1.9em;
+        font-size: 30px;
         margin-top: 20px;
     }
 
     .contenedor3 p {
-        font-size: 1.1em;
-        margin-right: 0;
+        font-size: 16px;
+        margin-right: 20px;
+        margin-left: 20px;
         margin-top: 10px;
     }
 
     button {
         padding: 10px 100px;
-        font-size: 14px;
+        font-size: 16px;
         margin: 40px auto 20px auto; /* Incrementa el margen superior para ajustar la posición vertical */
         display: block;
     }
 }
-
 
 @media (max-width: 500px) {
     
@@ -585,66 +563,72 @@ footer {
     }
 
     .contenido-izquierda {
-        margin-top: 60px; /* Ajusta el margen superior para mover el contenido más abajo */
-        margin-left: 20px; /* Ajusta el margen izquierdo */
-        margin-right: 20px; /* Ajusta el margen derecho */
+        margin-top: 60px;
+        margin-left: 20px; 
+        margin-right: 20px; 
     }
 
     .main4 h1 {
-        font-size: 1.5em; /* Reduce el tamaño de la tipografía del título */
-        text-align: left; /* Alinea el texto a la izquierda */
-        margin-top: -10px; /* Ajusta el margen superior para mover el título más arriba */
+        font-size: 24px; 
+        text-align: left; 
+        margin-top: -10px; 
     }
+    
+    .main4 p {
+    font-size: 16px;
+}
 
-    .nueva-imagen-derecha img {
-        max-width: 80%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+.nueva-imagen-derecha {
+        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
         height: auto; /* Mantiene la proporción de aspecto */
-        max-height: 250px; /* Establece la altura máxima de la imagen */
-        margin-top: -150px; /* Ajusta el margen superior de la imagen */
+        max-height: 250px; 
+        margin-top: -20px;
         margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-self: center; /* Centra la imagen horizontalmente */
     }
 }
 @media (max-width: 500px) {
     .main2 {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 5px; /* Reducir el espacio entre elementos */
-        height: auto; /* Ajusta la altura automáticamente */
-        padding: 10px; /* Reduce el espacio interno */
-        width: auto; /* Ajusta el ancho automáticamente */
+        grid-template-columns: 1fr; 
+        gap: 5px;
+        height: auto; 
+        padding: 10px;
+        width: auto; 
     }
 
     .main2 img {
-        max-width: 80%;
+        max-width: 100%;
         height: auto;
-        position: absolute; /* Establece la posición absoluta para la imagen */
-        top: 380px; /* Ajusta la posición vertical de la imagen */
-        left: 50%; /* Centra la imagen horizontalmente */
-        transform: translateX(-50%); /* Centra la imagen horizontalmente */
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
     }
 
-    .texto-izquierda,
-    .parrafo-izquierda,
-    .texto-derecha,
-    .parrafo-derecha {
-        margin-left: 20px; /* Ajusta el margen izquierdo */
-        margin-right: 20px; /* Ajusta el margen derecho */
-        margin-top: 20px; /* Ajusta el margen superior */
+    .texto-izquierda { /* bienvenido al cine online*/
+        margin-top: 20px;
+        margin-left: 20px; 
+        margin-right: 20px; 
     }
 
-    .texto-derecha,
-    .parrafo-derecha {
-        margin-top: 350px; /* Ajusta el margen superior de los elementos a la derecha */
-        margin-bottom: 5px;
+    .parrafo-izquierda { /* parrafo 1*/
+        margin-top: -10px;
+        margin-left: 20px; 
+        margin-right: 20px; 
     }
 
-    .parrafo-izquierda,
-    .parrafo-derecha {
-        margin-top: 10px; /* Ajusta el margen superior */
+    .texto-derecha { /* personaliza tu experiencia*/
+        margin-top: 20px;
+        margin-left: 20px; 
+        margin-right: 20px; 
     }
 
-    .parrafo-izquierda,
-    .parrafo-derecha {
-        margin-top: 10px; /* Ajusta el margen superior */
+    .parrafo-derecha { /*parrafo 2*/
+        margin-top: -10px;
+        margin-left: 20px; 
+        margin-right: 20px; 
+        margin-bottom: 40px;
     }
 
     .texto-izquierda {
@@ -652,192 +636,216 @@ footer {
     }
 
     .parrafo-izquierda {
-        order: 2; /* Establece el orden del elemento */
+        order: 2; 
     }
 
-    .imagen-intermedia {
-        order: 2; /* Establece el orden de la imagen */
+    .main2 img {
+        order: 2; 
         justify-self: center; /* Centra la imagen horizontalmente */
     }
 
     .texto-derecha {
-        order: 3; /* Establece el orden del elemento */
+        order: 3; 
     }
 
     .parrafo-derecha {
-        order: 4; /* Establece el orden del elemento */
+        order: 4; /
     }
 
     p {
-        font-size: 1em; /* Cambia el tamaño de la tipografía de los párrafos */
+        font-size: 1em; 
     }
 
     h2 {
-        font-size: 1.5em; /* Cambia el tamaño de la tipografía de los subtítulos */
+        font-size: 1.5em; 
     }
 
     .negrita-amarillo {
-        font-size: 1em; /* Cambia el tamaño de la tipografía de los elementos en negrita */
+        font-size: 1em; 
     }
 }
+
 @media only screen and (max-width: 500px) {
     .main3 {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 20px; /* Reduce el espacio entre elementos */
-        padding: 10px; /* Reduce el relleno */
-        width: auto; /* Ancho automático para adaptarse al contenido */
-        height: auto; /* Altura automática para adaptarse al contenido */
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        padding: 10px; 
+        width: auto; 
+        height: auto; 
         
     }
 
-    /* Ajuste de margen superior para imágenes */
-    .imagen-izquierda,
-    .imagen-derecha,
-    .nueva-imagen-izquierda,
-    .cuarta-imagen {
-        margin-top: 20px; /* Espacio entre imágenes */
-        margin-left:20px; /* Centra horizontalmente */
-        margin-right: auto; /* Centra horizontalmente */
-      
+    .subtitulo-central {
+        margin-top: 20px;
+        margin-bottom: -10px;
     }
 
-    /* Estilo adicional para agrupar imágenes de diferentes categorías */
-    .imagen-izquierda,
+    .imagen-izquierda {
+        margin-top: 20px; 
+        margin-left:10px; 
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .imagen-derecha {
+        margin-top: 20px; 
+        margin-left:10px; 
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
     .nueva-imagen-izquierda {
-        margin-right: 0; /* Reinicia el margen derecho */
+        margin-top: 20px; 
+        margin-left:10px; 
+        margin-right: 10px;
+        margin-bottom: 10px;
     }
 
-    .imagen-derecha,
     .cuarta-imagen {
-        margin-right: 0; /* Reinicia el margen derecho */
+        margin-top: 20px; 
+        margin-left:10px; 
+        margin-right: 10px; 
+        margin-bottom: 50px;
     }
 
-    /* Ajuste de tamaño de texto */
     .imagen-contenedor h3 {
-        font-size: 1.4em; /* Reducción del tamaño de fuente */
-        margin-left: 20px; /* Ajusta el margen izquierdo */
-        margin-right: 20px; /* Ajusta el margen derecho */
+        font-size: 20px; 
+        margin-left: 20px; 
+        margin-right: 20px; 
     }
 
     .imagen-contenedor p {
-        font-size: 1.1em; /* Reducción del tamaño de fuente */
-        margin-left: 20px; /* Ajusta el margen izquierdo */
-        margin-right: 20px; /* Ajusta el margen derecho */
-    }
-
-    /* Ajuste de tamaño de imágenes */
-    .imagen-contenedor img {
-        max-width: 80%; /* Establece el ancho máximo al 100% */
-        height: auto; /* Mantiene la relación de aspecto */
-    }
-}
-
-
-
-
-
-
-
-@media (max-width: 500px) {
-    .main5 {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 60px; /* Reducir el espacio entre elementos */
-        height: 600px; /* Ajusta la altura automáticamente */
-        padding: 10px; /* Reduce el espacio interno */
-        width: auto; /* Ajusta el ancho automáticamente */
-    }
-
-    .contenido-derecha {
-        margin-top: 20px; /* Ajusta el margen superior */
-        margin-left: 20px; /* Ajusta el margen izquierdo */
-        margin-right: 20px; /* Ajusta el margen derecho */
-        text-align: left; /* Alinea el texto a la izquierda */
-    }
-
-    .nueva-imagen-izquierdaa {
-        max-width: 80%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
-        height: auto; /* Mantiene la proporción de aspecto */
-        max-height: 250px; /* Establece la altura máxima de la imagen */
-        margin-top: -150px; /* Ajusta el margen superior de la imagen */
-        margin-bottom: 50px;
-        margin-left: 20px;
-    }
-
-    .imagen-conteneiner {
-        margin-top: 60px; /* Ajusta el margen superior */
-    }
-
-    .nueva-imagen-izquierdaa img {
-        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
-        height: auto; /* Mantiene la proporción de aspecto */
-        max-height: 250px; /* Establece la altura máxima de la imagen */
-    }
-}
-@media (max-width: 500px) {
-    .main6 {
-        grid-template-columns: 1fr; /* Cambia a una sola columna */
-        gap: 20px; /* Reducir el espacio entre elementos */
-        height: auto; /* Ajusta la altura automáticamente */
-        padding: 10px; /* Reduce el espacio interno */
-        width: auto; /* Ajusta el ancho automáticamente */
-        
-    }
-
-    .main6 h1{
-        font-size: 26px;
+        font-size: 16px;
         margin-left: 20px;
         margin-right: 20px;
     }
 
+    .imagen-contenedor img {
+        max-width: 80%; 
+        height: auto; 
+    }
+}
+
+
+@media (max-width: 500px) {
+    .main5 {
+        grid-template-columns: 1fr; 
+        gap: 60px; 
+        height: 600px; 
+        padding: 10px;
+        width: auto; 
+    }
+
+    .main5 h1{
+        font-size: 24px;
+    }
+
+    .main5 p {
+        font-size: 16px;
+    }
+
+    .contenido-derecha {
+        margin-top: 10px; 
+        margin-left: 20px;
+        margin-right: 20px; 
+        text-align: left; 
+    }
+
+    .nueva-imagen-izquierdaa {
+        max-width: 100%; /* Establece el ancho máximo de la imagen al 100% del contenedor */
+        height: auto; /* Mantiene la proporción de aspecto */
+        max-height: 250px; 
+        margin-top: -150px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: 20px;
+        justify-self: center; /* Centra la imagen horizontalmente */
+    }
+
+    .imagen-conteneiner {
+        margin-top: 60px; 
+        justify-self: center; /* Centra la imagen horizontalmente */
+    }
+
+    .nueva-imagen-izquierdaa img {
+        max-width: 100%; 
+        height: auto; 
+        max-height: 250px; 
+        justify-self: center; /* Centra la imagen horizontalmente */
+    }
+}
+@media (max-width: 500px) {
+    .main6 {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        height: auto;
+        padding: 10px; 
+        width: auto; 
+    }
+
+    .main6 h1{
+        font-size: 24px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main6 p {
+        font-size: 16px;
+    }
+
     .contenido {
-        
-        text-align: center; /* Centra el texto horizontalmente */
-        margin: -40px; /* Ajusta el margen */
+        text-align: center;
+        margin: -40px; 
         margin-top: 40px;
-        
+        margin-bottom: 20px;
     }
     .image-cont{
         display: none;
     }
-    
 
+    form button#Participar{
+        font-size: 16px;
+    }
 }
+
 @media (max-width: 500px) {
     .footer1 {
-        flex-direction: column; /* Cambia la dirección de la flexión a columna */
-        align-items: center; /* Centra los elementos horizontalmente */
-        text-align: left; /* Alinea el contenido a la izquierda */
+        flex-direction: column; 
+        align-items: center; 
+        text-align: left; 
     }
 
     .columna1,
     .columna2 {
-        width: 100%; /* Ajusta el ancho de las columnas al 100% */
-        margin-top: 20px; /* Ajusta el margen superior entre las columnas */
+        width: 100%; 
+        margin-top: 20px; 
     }
 
     .columna1 img {
-        width: 120px; /* Reducir el tamaño de la imagen */
-        margin-top: 30px; /* Ajustar el margen superior */
-        margin-left: 20px; /* Ajustar el margen izquierdo */
+        width: 120px; 
+        margin-top: 30px; 
+        margin-left: 10px; 
     }
 
     .columna1 p {
-        font-size: 18px; /* Reducir el tamaño del texto */
-        max-width: 280px; /* Reducir el ancho máximo del texto */
-        margin-top: 10px; /* Ajustar el margen superior */
-        margin-left: 20px; /* Ajustar el margen izquierdo */
+        font-size: 16px;
+        max-width: 450px; 
+        margin-top: 10px; 
+        margin-left: 10px; 
+        margin-right: 10px;
     }
 
     .columna2 {
         font-size: 18px;
-        margin-top: -30px; /* Ajusta el margen superior entre las columnas */
+        margin-top: -30px; 
         margin-left: 35px;
        
     }
 
     .columna2 h3 {
-        margin-bottom: 20px; /* Ajustar el margen inferior del encabezado */
-        margin-top: 2px; /* Ajustar el margen superior del encabezado */
+        margin-bottom: 18px; 
+        margin-top: 2px;
+        margin-left: -6px; 
     }
 
     .redes-sociales {
@@ -846,19 +854,19 @@ footer {
     }
 
     .redes-sociales img {
-        width: 50px; /* Reducir el tamaño de las imágenes de redes sociales */
-        margin: 10px; /* Reducir el espacio entre las imágenes */
-    
+        width: 50px; 
+        margin: 10px; 
+        margin-left: -6px;
+        margin-right: 25px;
     }
 
-
     .footer2 {
-        margin-top: 10px; /* Reducir el margen superior */
+        margin-top: 10px; 
     }
 
     .texto-derechos {
-        font-size: 14px; /* Reducir el tamaño del texto */
-        margin-top: 5px; /* Reducir el margen superior */
-        margin-bottom: 20px; /* Reducir el margen inferior */
+        font-size: 14px; 
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
 }
