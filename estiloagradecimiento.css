@@ -61,6 +61,8 @@ body {
 
 .contenedor p {
     font-size: 22px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 .pasos {
@@ -206,17 +208,19 @@ footer {
     .contenedor h1 {
         font-size: 26px;
         margin-bottom: 5px;
+        margin-top: 80px;
     }
 
     .pasos {
         margin-top: -240px;
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 1px;
       
     }
 
     .paso img {
         width: 80px;
+        margin-top: 60px;
     }
 
     .paso p {
